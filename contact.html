@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Tarihin Büyük Askerî Dehaları</title>
+    <link rel="stylesheet" href="css/stylemain.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+Pro:wght@400&family=Libre+Baskerville:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>İletişim</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="#">Kaynakça</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- İletişim Başlığı -->
+            <section class="contact-header">
+                <h2>Bize Ulaşın</h2>
+                <p>Sorularınız, önerileriniz veya geri bildirimleriniz için aşağıdaki formu doldurarak bize
+                    ulaşabilirsiniz.</p>
+            </section>
+
+            <!-- İletişim Formu & Bilgileri -->
+            <div class="contact-wrapper">
+                <!-- Form -->
+                <form id="contactForm" class="contact-form" action="https://formsubmit.co/tahirefe040435@gmail.com"
+                    method="POST">
+                    <div class="form-group">
+                        <label for="name">Adınız *</label>
+                        <input type="text" id="name" name="name" required placeholder="Adınız ve soyadınız">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-posta *</label>
+                        <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Konu *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Mesajınızın konusu">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesajınız *</label>
+                        <textarea id="message" name="message" rows="6" required
+                            placeholder="Mesajınızı yazın..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefon (İsteğe Bağlı)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+90 5XX XXX XXXX">
+                    </div>
+
+                    <button type="submit" class="submit-btn">Gönder</button>
+                </form>
+
+                <!-- İletişim Bilgileri -->
+                <section class="contact-info">
+                    <h3>İletişim Bilgileri</h3>
+
+                    <div class="info-item">
+                        <h4>📧 E-posta</h4>
+                        <p><a href="mailto:tahirefe040435@gmail.com">tahirefe040435@gmail.com</a></p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>📱 Telefon</h4>
+                        <p><a href="tel:+905551234567">+90 555 123 4567</a></p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>📍 Adres</h4>
+                        <p>İzmir, Türkiye</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>⏰ Çalışma Saatleri</h4>
+                        <p>Her Gün 24 Saat</p>
+                    </div>
+
+                    <div class="social-info">
+                        <h4>🔗 Sosyal Medya</h4>
+                        <div class="social-links-contact">
+                            <a href="https://github.com/rullyz-f" class="social-contact">Github</a>
+                            <a href="https://www.tiktok.com/@hamzzatahirr_?lang=tr-TR" class="social-contact">Tiktok</a>
+                            <a href="https://www.instagram.com/hamzzatahirr_/" class="social-contact">Instagram</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Hakkında</h3>
+                <p>Tarihin en büyük askerî dehalarını tanıyın. Savaş stratejileri, liderlik ve tarihi öğrenin.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                    <li><a href="#">Kaynakça</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Bizi Takip Edin</h3>
+                <div class="social-links">
+                    <a href="https://github.com/rullyz-f" class="social-icon">Github</a>
+                    <a href="https://www.tiktok.com/@hamzzatahirr_?lang=tr-TR" class="social-icon">Tiktok</a>
+                    <a href="https://www.instagram.com/hamzzatahirr_/" class="social-icon">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tarihin Büyük Askerî Dehaları. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- BAŞA DÖN BUTONU -->
+    <button id="backToTopBtn" class="back-to-top">
+        ⬆️
+    </button>
+
+    <script>
+        // Başa Dön Butonu
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
